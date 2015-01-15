@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- Ulysses Lin 1/15/2015 -->
+<!-- Home page -->
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.min.js"></script>
+    <script type="text/javascript" src="./javascripts/app.js"></script>
+    <script type="text/javascript" src="./javascripts/factories.js"></script>
+    <script type="text/javascript" src="./javascripts/controllers.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript">
+        //Socket stuff...not necessary for ministore assignment
+        var io = io.connect();
+        io.emit('client_ready');
+        io.on('info', function(msg) {
+            console.log("Received 'info' event as well as the following message:", msg);
+        });
+    </script>
+</head>
+<body>
+    <h1><%= title %></h1>
+    <div id="main" ng-app="demoApp">
+        <a href="#/customers">Customers</a> | <a href="#/orders">Orders</a>
+        <!-- Partials displayed in line below -->
+        <div ng-view=""></div>
+    </div>
+</body>
+</html>

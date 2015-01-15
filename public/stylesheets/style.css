@@ -1,0 +1,81 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url(http://press-server.munchiekonsilium.com/wp-content/files_mf/bt_new-shop-ibk_3.jpg);
+}
+	.nestled{
+		display: inline-block;
+		vertical-align: top;
+	}
+	h1,h2,p,th,td{
+		color: white;
+	}
+	.neon{
+		color: RGB(127,226,46);
+	}
+	.red{
+		color: RGB(243,41,1);
+	}
+	#main{
+		padding: 20px;
+		min-height: 300px;
+		background-color: rgba(253,117,33,0.4);
+	}
+	h1{
+		font-size: 50px;
+		margin: 10px 0px;
+	}
+	h2{
+		font-size: 30px;
+		margin: 10px 0px;
+	}
+	a{
+		color: RGB(253,117,33);
+	}
+	button{
+		padding: 1px;
+		width: 100px;
+		border: solid white 1px;
+		background-color: RGB(253,117,33);
+	}
+	table{
+		margin: 10px 0px;
+	}
+		th{
+			text-align: left;
+		}
+		th,td{
+			padding-right: 20px;
+		}
+.inputs{
+	padding: 20px;
+	text-align: left;
+	height: 250px;
+	width: 250px;
+	border: 1px solid lightgrey;
+}
+.inputs input{
+	float: right;
+}
+.inputs select{
+	float: right;
+}
+.inputs textarea{
+	float: right;
+}
+.inputs #submit{
+	margin-top: 20px;
+	margin-left: 100px;
+}
+.info{
+	display: inline-block;
+	width: 200px;
+	background-color: lightgreen;
+	border: 4px solid green;
+	padding: 5px;
+	margin: 10px;
+}
